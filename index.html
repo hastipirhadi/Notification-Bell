@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>notification-bell</title>
+  </head>
+  <body class="bg-background flex flex-col justify-center items-center h-svh">
+    <h1 class="text-text-title font-bold text-[20px] mb-1">
+      Notification Bell
+    </h1>
+    <p class="text-[10px] text-text-paragraph">
+      Click the bell to see notifications
+    </p>
+    <div id="notification" class="hover:translate-y-[-2px] cursor-pointer">
+      <div
+        class="bg-background-notification mt-6 flex justify-center items-center w-10 h-10 rounded-[12px] hover:bg-backgroundHover"
+      >
+        <svg
+          fill="#ffffff"
+          width="21px"
+          height="24px"
+          viewBox="0 0 36 36"
+          version="1.1"
+          preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>bell-solid</title>
+          <path
+            class="clr-i-solid clr-i-solid-path-1"
+            d="M32.85,28.13l-.34-.3A14.37,14.37,0,0,1,30,24.9a12.63,12.63,0,0,1-1.35-4.81V15.15A10.81,10.81,0,0,0,19.21,4.4V3.11a1.33,1.33,0,1,0-2.67,0V4.42A10.81,10.81,0,0,0,7.21,15.15v4.94A12.63,12.63,0,0,1,5.86,24.9a14.4,14.4,0,0,1-2.47,2.93l-.34.3v2.82H32.85Z"
+          ></path>
+          <path
+            class="clr-i-solid clr-i-solid-path-2"
+            d="M15.32,32a2.65,2.65,0,0,0,5.25,0Z"
+          ></path>
+          <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+        </svg>
+      </div>
+
+      <p id="count"
+        class="bg-backgroundBadge text-white relative bottom-11 left-6.5 rounded-4xl w-4 h-4 text-center text-[10px] font-bold"
+      >
+        3
+      </p>
+    </div>
+    <section id="notification-list" class="bg-background-notification rounded-[10px] opacity-0">
+      <div class="flex justify-between gap-14 px-3 py-2">
+        <p class="text-[13px] font-bold text-text-title">Notifications</p>
+        <button id="clear" class="text-[#60a5fa] text-[10px]">Mark all as read</button>
+      </div>
+      <hr class="w-full border-border-list" />
+      <div id="message1" class=" border-l-bordernotice border-l-[3px] flex flex-col gap-0.5 px-3 py-2 hover:bg-backgroundHover cursor-pointer">
+        <p class="text-[11px] font-medium text-text-title">
+          New message received
+        </p>
+        <p class="text-[9px] font-normal text-text-paragraph">2 minutes ago</p>
+      </div>
+      <hr class="w-full border-border-list" />
+      <div id="message2" class=" border-l-bordernotice border-l-[3px] flex flex-col gap-0.5 px-3 py-2 hover:bg-backgroundHover cursor-pointer">
+        <p class="text-[11px] font-medium text-text-title">
+          You have a new follower
+        </p>
+        <p class="text-[9px] font-normal text-text-paragraph">1 hour ago</p>
+      </div>
+      <hr class="w-full border-border-list" />
+      <div id="message3" class=" border-l-bordernotice border-l-[3px] flex flex-col gap-0.5 px-3 py-2 hover:bg-backgroundHover cursor-pointer">
+        <p class="text-[11px] font-medium text-text-title">Order shipped</p>
+        <p class="text-[9px] font-normal text-text-paragraph">3 hours ago</p>
+      </div>
+      <hr class="w-full border-border-list" />
+      <div id="message4" class="flex flex-col gap-0.5 px-3 py-2 hover:bg-backgroundHover cursor-pointer">
+        <p class="text-[11px] font-medium text-text-title">Payment received</p>
+        <p class="text-[9px] font-normal text-text-paragraph">Yesterday</p>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

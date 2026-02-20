@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f172a;
+  --color-text-title: #f1f5f9;
+  --color-text-paragraph: #94a3b8;
+  --color-backgroundBadge: #ef4444;
+  --color-background-notification: #1e293b;
+  --color-border-list:#334155;
+  --color-backgroundHover:#334155;
+  --color-text-time:#64748b;
+  --text-textButton:#60a5fa;
+  --shadow-notification: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --color-bordernotice:#3b82f6;
+}
+
+.show{
+  opacity: 100%;
+  transition: all step-start 1s;
+}
